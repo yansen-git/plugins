@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>原生js</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="slide"></div>
+</body>
+<script src="./inde.js"></script>
+<script>
+  window.onload = function() {
+    var o = new Swiper('.slide', [
+      {
+        imgUrl: './imgs/1.jpg'
+      },
+      {
+        imgUrl: './imgs/2.jpg'
+      },
+      {
+        imgUrl: './imgs/3.jpg'
+      }
+    ], {
+      intervalTime: 3000, // 图片自动切换时间，默认为5s
+    })
+  }
+</script>
+</html>

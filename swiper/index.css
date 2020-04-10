@@ -1,0 +1,98 @@
+.slide {
+  width: 800px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  transition: all 5s;
+  -moz-transition: all 5s;
+  -webkit-transition: all 5s;
+  -o-transition:all 5s;
+}
+.swiper-wrapper > .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex: 0 0 100%;
+}
+.swiper-wrapper > .swiper-slide > img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-btn {
+  width: 3rem;
+  height: 6rem;
+  background: transparent;
+  opacity: .6;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 6rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -3rem;
+  transition: background .6s;
+  z-index: 999;
+}
+.swiper-btn:hover {
+  background: #000;
+  cursor: pointer;
+}
+.swiper-pervious {
+  left: -1px;
+}
+.swiper-next {
+  right: -1px;
+}
+.swiper-tools {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  z-index: 999;
+}
+.swiper-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+  margin: 0.2rem;
+  opacity: 0.6;
+  transition: background .6s;
+}
+.swiper-dot:hover {
+  background: #ff6700;
+  cursor: pointer;
+}
+.swiper-dot-active {
+  background: #ff6700;
+}
